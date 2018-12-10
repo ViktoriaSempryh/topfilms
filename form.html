@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" >Home page</a>
+    </nav>
+    <br>
+    <fieldset>
+    <legend>Feedback form:</legend>
+    <h1>Feedback form</h1>
+    <form  method="POST" action="https://formspree.io/ViktoriaSempryh-25@ukr.net">
+        <label for="user-name"> User name: </label>
+       <input id="user-name" type="text" placeholder="User name" name="user-name" required> 
+       <label>
+          Email: <input type="text" placeholder="Email" name="email" required>
+       </label>
+       <br><br>
+       <label>What do you choose:</label>
+        <label>
+          Film:<input type="radio" name="type" value="film">
+       </label>
+       <label>
+          Soap opera: <input type="radio" name="type" value="soap-opera">
+       </label>
+       <label>
+          Сartoon: <input type="radio" name="type" value="cartoon">
+       </label>
+       <br><br>
+       <label>Genre:
+       <select name="genre">
+           <option value="comedy">Comedy</option>
+           <option value="action-movie">Action movie</option>
+           <option value="detective">Detective</option>
+           <option value="baby">Baby</option>
+           <option value="drama">Drama</option>
+           <option value="crime">Crime</option>
+           <option value="adventure">Adventure</option>
+           <option value="fantasy">Fantasy</option>
+        </select>
+        </label>
+        <br><br>
+        <label>Language:
+        <select name="lang">
+           <option value="uk">Ukrainian</option>
+           <option value="en">English</option>
+         </select>
+         </label>
+        <br><br>
+        <label>Name of Film:
+            <textarea type="text" name="name-of-film" placeholder="Name of film" row="20" cols="60" required></textarea>
+        </label>
+        <br><br>
+         <label>Feedback:
+            <textarea type="text" name="feedback" placeholder="Your response" row="150" cols="100" required></textarea>
+        </label>
+       <br><br>
+       <input type="submit">
+       <input type="reset">
+
+    </form>
+    </fieldset>
+    <br>
+    <footer>
+       <h3>The end</h3> 
+    </footer>
+        
+</body>
+</html>
